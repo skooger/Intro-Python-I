@@ -12,8 +12,7 @@ for more info regarding list comprehensions.
 
 y = []
 
-for x in range(5):
-    y.append(x)
+y = [i + 1 for i in range(5)]
 
 print (y)
 
@@ -22,9 +21,7 @@ print (y)
 
 y = []
 
-for x in range(10):
-    y.append(x**3)
-
+y = [i**3 for i in range(10)]
 print(y)
 
 # Write a list comprehension to produce the uppercase version of all the
@@ -34,8 +31,7 @@ a = ["foo", "bar", "baz"]
 
 y = []
 
-for arrStr in a:
-    y.append(a.upper())
+y = [i.upper() for i in a]
 
 print(y)
 
@@ -45,6 +41,6 @@ print(y)
 x = input("Enter comma-separated numbers: ").split(',')
 
 # What do you need between the square brackets to make it work?
-y = []
+y = [i for in x if i % 2==0]
 
 print(y)
